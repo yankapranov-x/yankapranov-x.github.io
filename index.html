@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yan Kapranov | International Scholar Profile</title>
+  <meta name="description" content="International scholar profile of Dr. Habil. Yan Kapranov, Professor at VIZJA University, Warsaw. Research in historical linguistics, macrocomparative studies, corpus linguistics, translation, and multilingual academic communication." />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#07111f;
+      --bg-2:#0d1830;
+      --card:rgba(14, 25, 47, 0.72);
+      --card-solid:#0f1c35;
+      --line:rgba(255,255,255,0.10);
+      --soft:rgba(255,255,255,0.72);
+      --text:#f5f7fb;
+      --muted:#b4bfd5;
+      --accent:#78c5ff;
+      --accent-2:#86f0db;
+      --gold:#e8c889;
+      --shadow:0 18px 60px rgba(0,0,0,0.35);
+      --radius:24px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at 0% 0%, rgba(120,197,255,0.14), transparent 28%),
+        radial-gradient(circle at 100% 10%, rgba(134,240,219,0.14), transparent 24%),
+        radial-gradient(circle at 50% 100%, rgba(232,200,137,0.10), transparent 22%),
+        linear-gradient(180deg, #07111f 0%, #0a1326 46%, #091321 100%);
+      min-height:100vh;
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(calc(100% - 2rem),var(--max));margin-inline:auto}
+    .site-header{
+      position:sticky;top:0;z-index:50;
+      backdrop-filter:blur(18px);
+      background:rgba(7,17,31,0.62);
+      border-bottom:1px solid rgba(255,255,255,0.06);
+    }
+    .nav-row{
+      display:flex;align-items:center;justify-content:space-between;
+      min-height:74px;gap:1rem
+    }
+    .brand{
+      display:flex;flex-direction:column;gap:.2rem;
+      font-weight:800;letter-spacing:-0.02em
+    }
+    .brand small{
+      color:var(--muted);
+      font-size:.74rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase
+    }
+    .nav-links{
+      display:flex;flex-wrap:wrap;gap:1rem;align-items:center
+    }
+    .nav-links a{
+      color:var(--soft);font-size:.95rem
+    }
+    .nav-links a:hover{color:#fff}
+    .menu-btn{
+      display:none;
+      background:transparent;border:1px solid var(--line);color:#fff;border-radius:12px;
+      width:44px;height:44px;font-size:1.1rem
+    }
+    .hero{padding:clamp(3rem,6vw,5rem) 0 2rem}
+    .hero-grid{
+      display:grid;grid-template-columns:1.12fr .88fr;gap:2rem;align-items:center
+    }
+    .kicker{
+      display:inline-flex;align-items:center;gap:.5rem;
+      padding:.45rem .8rem;border:1px solid rgba(255,255,255,0.1);border-radius:999px;
+      background:rgba(255,255,255,0.03);color:var(--soft);font-size:.87rem
+    }
+    .hero h1{
+      margin:.9rem 0 .7rem;
+      font-family:Fraunces, Georgia, serif;
+      font-size:clamp(2.8rem,5vw,5rem);
+      line-height:.96;
+      letter-spacing:-0.04em;
+      max-width:11ch;
+    }
+    .hero .subtitle{
+      font-size:clamp(1.02rem,1.5vw,1.22rem);
+      color:#d2dbec;max-width:65ch;line-height:1.72
+    }
+    .hero-meta{
+      display:flex;flex-wrap:wrap;gap:.7rem;margin:1.4rem 0 1.6rem
+    }
+    .tag{
+      padding:.6rem .9rem;border-radius:999px;
+      border:1px solid rgba(255,255,255,0.12);
+      background:rgba(255,255,255,0.03);color:#dfe8f7;font-size:.9rem
+    }
+    .actions{
+      display:flex;flex-wrap:wrap;gap:.85rem;margin-top:1.4rem
+    }
+    .button{
+      display:inline-flex;align-items:center;justify-content:center;
+      gap:.55rem;
+      min-height:50px;padding:0 1.1rem;border-radius:14px;
+      border:1px solid transparent;font-weight:600;transition:.2s ease;
+      box-shadow:var(--shadow)
+    }
+    .button.primary{
+      color:#07111f;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+    }
+    .button.secondary{
+      color:#fff;border-color:rgba(255,255,255,0.13);background:rgba(255,255,255,0.04);
+      box-shadow:none
+    }
+    .button:hover{transform:translateY(-1px)}
+    .hero-side{
+      position:relative;
+      display:grid;gap:1rem
+    }
+    .portrait-shell{
+      position:relative;
+      padding:1rem;
+      border-radius:32px;
+      background:linear-gradient(160deg, rgba(255,255,255,0.12), rgba(255,255,255,0.03));
+      border:1px solid rgba(255,255,255,0.09);
+      box-shadow:var(--shadow);
+    }
+    .portrait-shell::before{
+      content:"";
+      position:absolute;inset:12px;
+      border-radius:24px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.01));
+      pointer-events:none;
+    }
+    .portrait-shell img{
+      width:100%;aspect-ratio:4 / 5;object-fit:cover;object-position:center top;
+      border-radius:22px;position:relative;z-index:1
+    }
+    .glass-card{
+      display:grid;gap:1rem;
+      padding:1.2rem;border-radius:24px;
+      background:var(--card);
+      border:1px solid rgba(255,255,255,0.09);
+      backdrop-filter:blur(12px)
+    }
+    .metrics{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:.85rem
+    }
+    .metric{
+      padding:1rem;border-radius:18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06)
+    }
+    .metric strong{
+      display:block;font-size:1.5rem;letter-spacing:-0.03em;margin-bottom:.25rem
+    }
+    .metric span{color:var(--muted);font-size:.88rem;line-height:1.5}
+    main section{padding:1.8rem 0}
+    .section-head{
+      display:flex;align-items:end;justify-content:space-between;gap:1rem;
+      margin-bottom:1.2rem
+    }
+    .section-label{
+      color:var(--accent-2);
+      text-transform:uppercase;letter-spacing:.14em;font-size:.74rem;font-weight:700;
+      margin-bottom:.5rem
+    }
+    h2{
+      margin:0;
+      font-family:Fraunces, Georgia, serif;
+      font-size:clamp(2rem,3vw,3rem);
+      line-height:1.04;letter-spacing:-0.03em
+    }
+    .section-intro{
+      color:var(--muted);max-width:65ch;line-height:1.72;margin-top:.7rem
+    }
+    .about-grid, .contact-grid{
+      display:grid;grid-template-columns:1.05fr .95fr;gap:1rem
+    }
+    .cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+    .cards-2{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+    .card{
+      padding:1.25rem;border-radius:22px;background:var(--card);
+      border:1px solid rgba(255,255,255,0.09);backdrop-filter:blur(12px);box-shadow:var(--shadow)
+    }
+    .card h3{
+      margin:0 0 .6rem;
+      font-size:1.05rem;letter-spacing:-0.02em
+    }
+    .card p,.card li{
+      color:#d6deee;line-height:1.72;font-size:.97rem
+    }
+    .card ul{margin:.4rem 0 0;padding-left:1.1rem}
+    .detail-list{
+      display:grid;gap:.85rem;margin:0;padding:0;list-style:none
+    }
+    .detail-list li{
+      display:flex;justify-content:space-between;gap:1rem;
+      padding-bottom:.8rem;border-bottom:1px dashed rgba(255,255,255,0.10)
+    }
+    .detail-list li:last-child{padding-bottom:0;border-bottom:0}
+    .detail-list span:first-child{color:var(--muted)}
+    .focus-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+    .focus-card{
+      padding:1.2rem;border-radius:22px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      border:1px solid rgba(255,255,255,0.08)
+    }
+    .focus-card h3{margin:0 0 .5rem;font-size:1rem}
+    .focus-card p{margin:0;color:#d6deee;line-height:1.67;font-size:.95rem}
+    .timeline{
+      display:grid;gap:1rem
+    }
+    .timeline-item{
+      display:grid;grid-template-columns:130px 1fr;gap:1rem;
+      padding:1rem 1.05rem;border-radius:20px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07)
+    }
+    .timeline-item .year{
+      color:var(--accent-2);font-weight:700;letter-spacing:.04em
+    }
+    .timeline-item h3{margin:0 0 .35rem;font-size:1.02rem}
+    .timeline-item p{margin:0;color:#d6deee;line-height:1.68}
+    .project-grid{
+      display:grid;grid-template-columns:repeat(2,1fr);gap:1rem
+    }
+    .project-card{
+      position:relative;overflow:hidden;
+      padding:1.3rem;border-radius:24px;
+      background:linear-gradient(180deg, rgba(15,28,53,0.95), rgba(10,20,40,0.94));
+      border:1px solid rgba(255,255,255,0.08);
+      box-shadow:var(--shadow)
+    }
+    .project-card::after{
+      content:"";
+      position:absolute;right:-40px;top:-40px;width:140px;height:140px;
+      background:radial-gradient(circle, rgba(120,197,255,0.18), transparent 60%);
+      border-radius:50%
+    }
+    .project-card h3{margin:0 0 .45rem;font-size:1.12rem;position:relative;z-index:1}
+    .project-card p{margin:0;color:#d5ddef;line-height:1.7;position:relative;z-index:1}
+    .project-meta{
+      margin-top:1rem;display:flex;gap:.6rem;flex-wrap:wrap;position:relative;z-index:1
+    }
+    .pill{
+      padding:.45rem .7rem;border-radius:999px;font-size:.82rem;
+      border:1px solid rgba(255,255,255,0.10);color:#dfe7f7;background:rgba(255,255,255,0.03)
+    }
+    .pub-list{
+      display:grid;gap:1rem
+    }
+    .pub-item{
+      padding:1.2rem 1.25rem;border-radius:22px;background:var(--card);
+      border:1px solid rgba(255,255,255,0.09)
+    }
+    .pub-type{
+      display:inline-block;margin-bottom:.55rem;
+      font-size:.76rem;letter-spacing:.11em;text-transform:uppercase;color:var(--gold);font-weight:700
+    }
+    .pub-item h3{margin:0 0 .4rem;font-size:1.03rem;line-height:1.45}
+    .pub-item p{margin:0;color:#d6deee;line-height:1.72}
+    .network-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+    .network-card{
+      padding:1.15rem;border-radius:22px;background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.08)
+    }
+    .network-card h3{margin:0 0 .55rem;font-size:1rem}
+    .network-card p{margin:0;color:#d6deee;line-height:1.65;font-size:.94rem}
+    .spotlight{
+      display:grid;grid-template-columns:1.1fr .9fr;gap:1rem
+    }
+    .quote{
+      padding:1.4rem;border-radius:24px;
+      background:linear-gradient(180deg, rgba(120,197,255,0.12), rgba(255,255,255,0.02));
+      border:1px solid rgba(120,197,255,0.18)
+    }
+    .quote p{
+      margin:0;color:#f3f6fb;font-size:1.07rem;line-height:1.8
+    }
+    .contact-card a.inline{color:var(--accent)}
+    footer{
+      padding:1.8rem 0 3rem;color:var(--muted);font-size:.92rem
+    }
+    .footer-row{
+      display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+      border-top:1px solid rgba(255,255,255,0.08);padding-top:1rem
+    }
+    @media (max-width: 1080px){
+      .hero-grid,.about-grid,.contact-grid,.spotlight{grid-template-columns:1fr}
+      .focus-grid,.network-grid{grid-template-columns:repeat(2,1fr)}
+      .cards-3,.project-grid{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width: 760px){
+      .menu-btn{display:inline-flex;align-items:center;justify-content:center}
+      .nav-links{
+        position:absolute;left:1rem;right:1rem;top:74px;
+        background:rgba(9,19,38,0.97);border:1px solid rgba(255,255,255,0.08);
+        padding:1rem;border-radius:18px;display:none;flex-direction:column;align-items:flex-start
+      }
+      .nav-links.open{display:flex}
+      .hero h1{max-width:none}
+      .metrics,.cards-3,.cards-2,.focus-grid,.project-grid,.network-grid{grid-template-columns:1fr}
+      .timeline-item{grid-template-columns:1fr}
+      .button{width:100%}
+      .actions{flex-direction:column}
+      .detail-list li{flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a href="#home" class="brand">
+        <span>Yan Kapranov</span>
+        <small>International scholar profile</small>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#team">Team</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="kicker">Professor · Historical Linguistics · International Research Leadership</span>
+          <h1>Dr. Habil. Yan Kapranov</h1>
+          <p class="subtitle">
+            Professor at VIZJA University in Warsaw whose work connects historical and macrocomparative linguistics,
+            corpus-based inquiry, translation studies, multilingual communication, and international academic project development.
+          </p>
+          <div class="hero-meta">
+            <span class="tag">Historical Linguistics</span>
+            <span class="tag">Macrocomparative Studies</span>
+            <span class="tag">Corpus Linguistics</span>
+            <span class="tag">Translation Studies</span>
+            <span class="tag">EU-Funded Projects</span>
+          </div>
+          <div class="actions">
+            <a class="button primary" href="#publications">Explore selected publications</a>
+            <a class="button secondary" href="assets/Yan_Kapranov_CV.doc">Download CV</a>
+          </div>
+        </div>
+
+        <div class="hero-side">
+          <div class="portrait-shell">
+            <img src="assets/yan-kapranov-photo.jpg" alt="Dr. Habil. Yan Kapranov standing in a library" />
+          </div>
+          <div class="glass-card">
+            <div class="metrics">
+              <div class="metric">
+                <strong>2025–</strong>
+                <span>Professor, School of Humanities and Fine Arts, VIZJA University</span>
+              </div>
+              <div class="metric">
+                <strong>2023</strong>
+                <span>Attestation of Full Professor, Kyiv National Linguistic University</span>
+              </div>
+              <div class="metric">
+                <strong>6</strong>
+                <span>Languages listed in the academic CV</span>
+              </div>
+            </div>
+            <div class="metrics">
+              <div class="metric">
+                <strong>5+</strong>
+                <span>Major grant and Jean Monnet initiatives highlighted on this profile</span>
+              </div>
+              <div class="metric">
+                <strong>2</strong>
+                <span>Editor-in-Chief roles in academic journals</span>
+              </div>
+              <div class="metric">
+                <strong>Oulu · Kyiv · Warsaw</strong>
+                <span>Research and academic cooperation across multiple European contexts</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">About</div>
+            <h2>A philologist with an international research footprint</h2>
+            <p class="section-intro">
+              This profile presents an academically focused overview of Yan Kapranov’s research trajectory, teaching portfolio,
+              editorial leadership, and international project work. The emphasis is on disciplinary depth, transnational collaboration,
+              and a modern scholarly identity shaped across Poland, Ukraine, and Finland-linked research environments.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <article class="card">
+            <h3>Profile</h3>
+            <p>
+              Yan Kapranov is a Doctor of Sciences in Philology / Habilitated Doctor in Historical Linguistics and a Professor whose work
+              spans macrocomparative linguistics, global etymologies, corpus methods, translation, and multilingual academic communication.
+              His educational background is rooted in Kyiv National Linguistic University, where he completed BA and MA studies in English
+              and Italian, a PhD in Historical Linguistics, and later a higher doctorate in the same field.
+            </p>
+            <p>
+              In addition to disciplinary scholarship, his profile includes extensive engagement with Erasmus+, Jean Monnet, and other
+              academic initiatives that connect language, digital transformation, European studies, and transnational higher education.
+            </p>
+          </article>
+
+          <aside class="card">
+            <h3>At a glance</h3>
+            <ul class="detail-list">
+              <li><span>Current affiliation</span><span>VIZJA University, Warsaw</span></li>
+              <li><span>Department</span><span>School of Humanities and Fine Arts</span></li>
+              <li><span>Additional affiliation</span><span>Dmytro Motornyi Tavria State Agrotechnological University</span></li>
+              <li><span>Core fields</span><span>Historical linguistics, macrocomparison, corpora, translation</span></li>
+              <li><span>Working languages</span><span>English, Italian, Lithuanian, Polish, Russian, Ukrainian</span></li>
+              <li><span>ORCID</span><span>0000-0003-2915-038X</span></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Research</div>
+            <h2>Research agenda</h2>
+            <p class="section-intro">
+              The current research profile combines deep diachronic inquiry with corpus-informed and interdisciplinary approaches.
+              It moves between language history, linguistic comparison, translation, discourse, and digital scholarly practices.
+            </p>
+          </div>
+        </div>
+
+        <div class="focus-grid">
+          <article class="focus-card">
+            <h3>Historical and macrocomparative linguistics</h3>
+            <p>Diachronic interpretation of language relationships across Indo-European, Afro-Asiatic, Altaic, Dravidian, Uralic, Kartvelian, and Eskimo-Aleut materials.</p>
+          </article>
+          <article class="focus-card">
+            <h3>Global etymologies</h3>
+            <p>Research on etymological modelling, reconstruction, verification, and the structure of comparative evidence in long-range linguistic inquiry.</p>
+          </article>
+          <article class="focus-card">
+            <h3>Corpus linguistics</h3>
+            <p>Application of corpora to discourse analysis, translation studies, linguistic diagnostics, intertextuality, and educational practice.</p>
+          </article>
+          <article class="focus-card">
+            <h3>Translation and multilingual communication</h3>
+            <p>English–Ukrainian translation, interpreter training, multilingual academic communication, and contrastive analysis in higher education settings.</p>
+          </article>
+        </div>
+
+        <div class="spotlight" style="margin-top:1rem;">
+          <article class="card">
+            <h3>Academic formation</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="year">2023</div>
+                <div>
+                  <h3>Attestation of Full Professor</h3>
+                  <p>Kyiv National Linguistic University, Kyiv, Ukraine.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="year">2018–2021</div>
+                <div>
+                  <h3>Doctor of Sciences / Habilitated Doctor in Philology</h3>
+                  <p>Higher doctorate in historical linguistics with dissertation work on the diachronic interpretation and verification of Nostratic language relationships.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="year">2012–2015</div>
+                <div>
+                  <h3>PhD in Philology</h3>
+                  <p>Doctoral research in historical linguistics focused on dictionary-entry construction in etymological sources of English and Ukrainian.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="quote">
+            <p>
+              “The profile stands at the intersection of philological exactness and international academic strategy:
+              from macrocomparative linguistics and etymological modelling to multilingual education, editorial work,
+              and large-scale project development.”
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Projects</div>
+            <h2>Selected international projects and grants</h2>
+            <p class="section-intro">
+              Project experience includes Jean Monnet actions, national and international research funding, and interdisciplinary initiatives
+              linking language, society, education, and digital transformation.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>VISUAL-EU</h3>
+            <p>Visualizing the EU: Enhancing Public Awareness of European Policies, Values, and Initiatives at Polish HEIs.</p>
+            <div class="project-meta">
+              <span class="pill">2025–2028</span>
+              <span class="pill">Erasmus+ Jean Monnet</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3>ROAD2EU</h3>
+            <p>Roadmap for Integrating EU Policies and Strategies on Economic, Social, and Territorial Synergy in Polish Higher Education through Digital European Studies.</p>
+            <div class="project-meta">
+              <span class="pill">2025–2028</span>
+              <span class="pill">Erasmus+ Jean Monnet</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3>ESPERIDTA</h3>
+            <p>European Studies for Supporting Polish Education and Research in Digital Transformation: Interdisciplinary Approach.</p>
+            <div class="project-meta">
+              <span class="pill">2024–2027</span>
+              <span class="pill">Erasmus+ Jean Monnet</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3>Language and social interaction in war and exile</h3>
+            <p>Individual grant from the Academy of Finland implemented at the University of Oulu.</p>
+            <div class="project-meta">
+              <span class="pill">2023–2025</span>
+              <span class="pill">Academy of Finland</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3>EVUESS</h3>
+            <p>Integration of European Values in the Fields of Ukrainian Education, Science, and Sports.</p>
+            <div class="project-meta">
+              <span class="pill">2023–2026</span>
+              <span class="pill">Erasmus+ Jean Monnet</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3>MCRESR</h3>
+            <p>Multilingual Corpus and its Resources for European Studies Research.</p>
+            <div class="project-meta">
+              <span class="pill">2022–2025</span>
+              <span class="pill">Erasmus+ Jean Monnet</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Publications</div>
+            <h2>Selected publications</h2>
+            <p class="section-intro">
+              A curated selection from monographs, books, and indexed journal publications representing major strands of the research profile.
+            </p>
+          </div>
+        </div>
+
+        <div class="pub-list">
+          <article class="pub-item">
+            <span class="pub-type">Monograph · 2024</span>
+            <h3>Kapranov, Y., Iwanowska, B., &amp; Cieślik, B. <em>Diachronic Interpretation of the Nostratic Macrofamily: A Comparative Study of Altaic, Afro-Asiatic, Dravidian, Eskimo-Aleut, Indo-European, Kartvelian, and Uralic Proto-Languages</em>.</h3>
+            <p>Brill | V&amp;R unipress. A major comparative monograph foregrounding long-range historical analysis and macrofamily argumentation.</p>
+          </article>
+
+          <article class="pub-item">
+            <span class="pub-type">Monograph · 2024</span>
+            <h3>Kapranov, Y., Iwanowska, B., &amp; Cieślik, B. <em>Principles of Constructing Microstructures in Etymological References: Perspectives on Modelling the Structure of Etymons</em>.</h3>
+            <p>Brill | V&amp;R unipress. Focused on the architecture of etymological reference and the modelling of etymons in comparative work.</p>
+          </article>
+
+          <article class="pub-item">
+            <span class="pub-type">Monograph · 2025</span>
+            <h3>Cherkhava, O., Kapranov, Y., Sitnicki, M. W., &amp; Iwanowska, B. <em>Strategic Perspectives on the Reconstruction and Diachronic Interpretation of Archetypal Theolinguistic Matrices in Religious-Popular Discourse</em>.</h3>
+            <p>V&amp;R unipress. Interdisciplinary work connecting theolinguistics, diachrony, and comparative philology.</p>
+          </article>
+
+          <article class="pub-item">
+            <span class="pub-type">Article · Scopus / Web of Science</span>
+            <h3>Kapranov, Y. (2022). Logical-Philosophical Reinterpretation of Retrospective Nature of AI Technology in the Modern Globalized World.</h3>
+            <p><em>Logos,</em> 113, 35–45. DOI: 10.24101/logos.2022.71.</p>
+          </article>
+
+          <article class="pub-item">
+            <span class="pub-type">Article · Scopus Q2</span>
+            <h3>Liashko, O., Bober, N., Kapranov, Y., Cherkhava, O., &amp; Meleshkevych, L. (2022). Interpretation of Keywords as Indicators of Intertextuality in English New Testament Texts (AntConc Corpus Manager Toolkit).</h3>
+            <p><em>Wisdom,</em> 22(2), 193–207. DOI: 10.24234/wisdom.v22i2.736.</p>
+          </article>
+
+          <article class="pub-item">
+            <span class="pub-type">Article · Web of Science</span>
+            <h3>Kapranov, Y., Liashko, O., Cherkhava, O., Nasalevych, T., &amp; Riabukha, T. (2021). Methodological Algorithm for Interpreting Intertextuality within the Orthodox Sermon.</h3>
+            <p><em>Amazonia Investiga,</em> 10(39), 186–193. DOI: 10.34069/AI/2021.43.07.12.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Team</div>
+            <h2>Collaborative network</h2>
+            <p class="section-intro">
+              This section frames “team” as a distributed scholarly network rather than a fixed lab roster. It reflects institutional and editorial ecosystems
+              around research, teaching, grants, and academic publishing.
+            </p>
+          </div>
+        </div>
+
+        <div class="network-grid">
+          <article class="network-card">
+            <h3>VIZJA University</h3>
+            <p>Main academic base in Warsaw for teaching, curriculum development, project design, and interdisciplinary collaboration.</p>
+          </article>
+          <article class="network-card">
+            <h3>Kyiv National Linguistic University</h3>
+            <p>Foundational institution for academic formation, doctoral and habilitation research, and translation-oriented philological work.</p>
+          </article>
+          <article class="network-card">
+            <h3>University of Oulu</h3>
+            <p>Research cooperation linked to Finland-based work on language, multilingualism, and social interaction in contexts of war and exile.</p>
+          </article>
+          <article class="network-card">
+            <h3>Editorial ecosystem</h3>
+            <p>Leadership and board participation across journals in linguistics, AI-related language studies, law, politics, and interdisciplinary scholarship.</p>
+          </article>
+        </div>
+
+        <div class="cards-2" style="margin-top:1rem;">
+          <article class="card">
+            <h3>Editorial roles</h3>
+            <ul>
+              <li>Editor-in-Chief, <em>Acta Humanitatis</em></li>
+              <li>Editor-in-Chief, <em>DIALOGICA: Journal of Human and AI Language Interaction</em></li>
+              <li>Editorial Board Member, <em>AI, LAW, POLITICS</em></li>
+              <li>Editorial Board Member, <em>Amazonia Investiga</em></li>
+              <li>Editorial Board Member, <em>Ukrainian Studies in the European Context</em></li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Scholarly service and supervision</h3>
+            <ul>
+              <li>Member of a Specialized Academic Council for doctoral dissertation defence in philological fields.</li>
+              <li>PhD supervision in philology, including research on sociolects, interdiscursivity, intertextuality, and terminology.</li>
+              <li>Organisation and programme participation in international scientific conferences and webinars.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="teaching">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Teaching</div>
+            <h2>Teaching portfolio</h2>
+            <p class="section-intro">
+              The teaching record bridges linguistics, translation, corpus methods, academic communication, and European studies across BA, MA, and PhD levels.
+            </p>
+          </div>
+        </div>
+
+        <div class="cards-3">
+          <article class="card">
+            <h3>Current teaching at VIZJA University</h3>
+            <ul>
+              <li>European Studies in Multilingualism</li>
+              <li>Methodology of the Social Project</li>
+              <li>Corpus Linguistics</li>
+              <li>Practical English: Vocabulary, Reading, Writing, and Stylistics</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Translation and philology teaching</h3>
+            <ul>
+              <li>Theory and Practice of Written Translation</li>
+              <li>Theory and Practice of Oral Translation</li>
+              <li>History of the English Language</li>
+              <li>Comparative-Historical and Typological Linguistics</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Advanced and doctoral-level themes</h3>
+            <ul>
+              <li>Multilingual Corpus and its Resources for European Studies Research</li>
+              <li>Modern Management of Scientific Projects</li>
+              <li>Training of Universal Skills of a Researcher-Philologist</li>
+              <li>Indo-European Studies: from Phonology to Syntax</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Contact</div>
+            <h2>Academic contact and profiles</h2>
+            <p class="section-intro">
+              For research cooperation, invited talks, editorial collaboration, teaching partnerships, or project development, use the channels below.
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <article class="card contact-card">
+            <h3>Direct contact</h3>
+            <p>Email: <a class="inline" href="mailto:yankapranov@gmail.com">yankapranov@gmail.com</a></p>
+            <p>Affiliation: School of Humanities and Fine Arts, VIZJA University, Warsaw, Poland</p>
+            <p>Address: 59 Okopowa Street, 01-043 Warsaw, Poland</p>
+          </article>
+
+          <article class="card contact-card">
+            <h3>Academic profiles</h3>
+            <p><a class="inline" href="https://orcid.org/0000-0003-2915-038X" target="_blank" rel="noopener">ORCID</a></p>
+            <p><a class="inline" href="https://scholar.google.com.ua/citations?user=y2NjXhkAAAAJ&hl=ru" target="_blank" rel="noopener">Google Scholar</a></p>
+            <p><a class="inline" href="https://publons.com/researcher/1462543/yan-kapranov/" target="_blank" rel="noopener">Publons</a></p>
+            <p><a class="inline" href="https://www.linkedin.com/in/yan-kapranov-48744a212/" target="_blank" rel="noopener">LinkedIn</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <span>© 2026 Yan Kapranov. Personal academic website.</span>
+      <span>Prepared as a GitHub Pages–ready single-page profile.</span>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const nav = document.getElementById('navLinks');
+    btn.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => nav.classList.remove('open'));
+    });
+  </script>
+</body>
+</html>
